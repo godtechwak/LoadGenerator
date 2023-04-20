@@ -41,7 +41,7 @@ class BulkInsert:
             elif (tbl_work_num == 200):
                 query=f"DROP TABLE test.test{i};\n"
             elif (tbl_work_num == 300):
-                query="TRUNCATE TABLE test.test{i};\n"
+                query=f"TRUNCATE TABLE test.test{i};\n"
 
             try:
                 cursor.execute(query)
